@@ -1,0 +1,23 @@
+function palindrome(str) {
+  let newStr = str.toLowerCase().replace(/[^a-zA-Z1]/g, "");
+  console.log(newStr)
+  
+  //Reverse String
+  let revStr = '';
+  for(let i = newStr.length - 1; i >= 0 ; i--){
+      revStr += newStr[i]
+  }
+
+  if(newStr === revStr){
+    return true
+
+  }else{
+    return false
+  }
+
+
+ 
+}
+ 
+
+console.log(palindrome("Ey  e"))
